@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <p class="project_title">Star Rating</p>
+    <div class="star_cont">
+      <button class="star star-empty" data-index="1"></button>
+      <button class="star star-empty" data-index="2"></button>
+      <button class="star star-empty" data-index="3"></button>
+      <button class="star star-empty" data-index="4"></button>
+      <button class="star star-empty" data-index="5"></button>
+    </div>
+    <p class="txt">Click to set Rating</p>
+    <script>
+      // const stars = document.querySelectorAll(".star");
+
+      // stars.forEach((item, idx) => {
+      //   item.addEventListener("mouseover", (e) => {
+      //     const indexVal = item.getAttribute("data-index");
+      //     for (let i = 1; i <= indexVal; i++) {
+      //       let elm = document.querySelector(`.star[data-index='${i}']`);
+      //       elm.classList.remove("star-empty");
+      //       elm.classList.add("star-filled");
+      //     }
+      //   });
+
+      //   item.addEventListener("mouseout", (e) => {
+      //     const indexVal = item.getAttribute("data-index");
+      //     for (let i = 1; i <= indexVal; i++) {
+      //       let elm = document.querySelector(`.star[data-index='${i}']`);
+      //       elm.classList.remove("star-filled");
+      //       elm.classList.add("star-empty");
+      //     }
+      //   });
+
+      //   item.addEventListener("click", (e) => {
+      //     const indexVal = item.getAttribute("data-index");
+      //     for (let i = 1; i <= indexVal; i++) {
+      //       let elm = document.querySelector(`.star[data-index='${i}']`);
+      //       elm.classList.remove("star-empty");
+      //       elm.classList.add("star-filled");
+      //     }
+      //   });
+      // });
+
+      // function compose(...funcs) {
+      //   return function (arg) {
+      //     return funcs.reduceRight((acc, func) => func(acc), arg);
+      //   };
+      // }
+
+      // // Example functions
+      // function add2(x) {
+      //   return x + 2;
+      // }
+
+      // function multiply3(x) {
+      //   return x * 3;
+      // }
+
+      // function square(x) {
+      //   return x * x;
+      // }
+
+      // // Creating a composite function
+      // const composedFunction = compose(add2, multiply3, square);
+
+      // // Using the composed function
+      // const result = composedFunction(3); // square(3) * 3 + 2 = 29
+      // console.log(result); // Output: 29
+
+      const swap = (array, index1, index2) => {
+        let temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+      };
+
+      // let arr = [1, 2, 3, 4, 5, 6];
+
+      // // for (let i = 0; i <= (arr.length - 1) / 2; i++) {
+      // //   swap(arr, i, arr.length - i - 1);
+      // // }
+
+      // function swapElms(i, arr) {
+      //   if (i >= (arr.length - 1) / 2) {
+      //     console.log(i);
+      //     return;
+      //   }
+
+      //   swap(arr, i, arr.length - i - 1);
+
+      //   swapElms(i + 1, arr);
+      // }
+
+      // swapElms(0, arr);
+      // console.log(arr);
+
+      // function fibo(n) {
+      //   if (n <= 1) return n;
+
+      //   return fibo(n - 1) + fibo(n - 2);
+      // }
+
+      // console.log(fibo(4));
+
+      // String.prototype.trueLength = function () {
+      //   return this.trim().length;
+      // };
+
+      // let str = "Sub    ";
+
+      // console.log(str.trueLength());
+
+      const test = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Promise Resolved!");
+          resolve();
+        }, 10000);
+      });
+
+      const thenPromise = test.then(() => {
+        console.log("Then");
+      });
+      const finallyPromise = thenPromise.finally(() => {
+        throw new Error("Finally Error");
+      });
+
+      console.log(finallyPromise);
+    </script>
+  </body>
+</html>

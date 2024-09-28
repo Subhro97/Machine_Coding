@@ -1,0 +1,19 @@
+.progress-bar-cont {
+  max-width: 500px;
+  height: 50px;
+  border: 1px solid brown;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-cont .progress-bar {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+}

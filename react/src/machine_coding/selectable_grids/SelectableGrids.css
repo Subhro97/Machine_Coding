@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.gridCont {
+  display: flex;
+  gap: 10px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gridCont div {
+  border: 1px solid brown;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gridCont div.active {
+  background-color: rgb(186 230 252);
+}

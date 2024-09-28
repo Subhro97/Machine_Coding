@@ -1,0 +1,19 @@
+.sectionCont {
+  max-width: 500px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+ul {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px !important;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+}

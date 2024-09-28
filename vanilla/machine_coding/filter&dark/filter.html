@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./filter.css" />
+    <link rel="stylesheet" href="./dark_filter.css" />
+    <title>Filter & Dark</title>
+  </head>
+  <body>
+    <header>
+      <div class="switch">
+        <input class="slider-input" type="checkbox" />
+        <div class="slider"></div>
+      </div>
+    </header>
+    <div class="main-cont">
+      <div class="filters-cont">
+        <div class="cellTech-filter">
+          <p>Cellular Technology</p>
+          <section class="tech-list">
+            <div class="2g">
+              <input type="checkbox" id="2g" name="2g" value="2G" />
+              <label for="2g">2G</label>
+            </div>
+            <div class="3g">
+              <input type="checkbox" id="3g" name="3g" value="3G" />
+              <label for="3g">3G</label>
+            </div>
+            <div class="4g">
+              <input type="checkbox" id="4g" name="4g" value="4G" />
+              <label for="4g">4G</label>
+            </div>
+            <div class="5g">
+              <input type="checkbox" id="5g" name="5g" value="5G" />
+              <label for="5g">5G</label>
+            </div>
+          </section>
+        </div>
+        <div class="brands-filter">
+          <p>Brands</p>
+          <section class="brands-list">
+            <div class="apple">
+              <input type="checkbox" id="apple" name="apple" value="Apple" />
+              <label for="apple">Apple</label>
+            </div>
+            <div class="samsumg">
+              <input
+                type="checkbox"
+                id="samsumg"
+                name="samsumg"
+                value="Samsung"
+              />
+              <label for="samsumg">Samsung</label>
+            </div>
+            <div class="google">
+              <input type="checkbox" id="google" name="google" value="Google" />
+              <label for="google">Google</label>
+            </div>
+            <div class="oneplus">
+              <input
+                type="checkbox"
+                id="oneplus"
+                name="oneplus"
+                value="OnePlus"
+              />
+              <label for="oneplus">Oneplus</label>
+            </div>
+            <div class="xiaomi">
+              <input type="checkbox" id="xiaomi" name="xiaomi" value="Xiaomi" />
+              <label for="xiaomi">Xiaomi</label>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="items-cont-outer">
+        <div class="items-cont"></div>
+        <ul class="pagination">
+          <div data-tag="-1">&laquo;</div>
+          <li class="active" data-tag="1">1</li>
+          <li data-tag="2">2</li>
+          <li data-tag="3">3</li>
+          <li data-tag="4">4</li>
+          <li data-tag="5">5</li>
+          <li data-tag="6">6</li>
+          <li data-tag="7">7</li>
+          <li data-tag="8">8</li>
+          <li data-tag="9">9</li>
+          <li data-tag="10">10</li>
+          <div data-tag="+1">&raquo;</div>
+        </ul>
+      </div>
+    </div>
+    <script src="./filter.js"></script>
+  </body>
+</html>

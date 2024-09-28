@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+header {
+  margin-bottom: 30px;
+  align-self: flex-end;
+  padding: 0 40px;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 34px;
+  width: 100%;
+  height: 100%;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  left: 4px;
+  top: 4px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+.dark .slider {
+  background-color: #ced4e2;
+}
+.dark .slider::before {
+  transform: translateX(26px);
+  background-color: #242424;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-cont {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-height: 600px;
+}
+
+.filters-cont {
+  max-width: 250px;
+  width: 100%;
+  padding: 4px 44px 4px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-cont p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filters-cont div {
+  margin-left: 5px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.filters-cont input,
+.filters-cont label {
+  pointer-events: none;
+}
+
+.items-cont-outer {
+  max-height: 600px;
+  overflow: auto;
+}
+
+.items-cont {
+  width: 100%;
+  padding: 0 4px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-left: 1px solid;
+}
+
+.item {
+  max-width: 240px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pagination li,
+.pagination div {
+  cursor: pointer;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination div.active,
+.pagination li.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination li:hover:not(.active),
+.pagination div:hover:not(.active) {
+  background-color: #ddd;
+}

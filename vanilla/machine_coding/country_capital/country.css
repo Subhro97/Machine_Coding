@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.gameList {
+  max-width: 450px;
+  display: flex;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.gameList li {
+  background: rgb(245, 245, 245);
+  border: 2px solid #414141;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gameList li.selected {
+  border-color: blue;
+}
+
+.gameList li.correct {
+  border-color: #66cc99;
+}
+
+.gameList li.incorrect {
+  border-color: red;
+}

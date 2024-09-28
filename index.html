@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Code</title>
+    <style>
+      :root {
+        --blue: rgb(80, 77, 241);
+        --white: #fff;
+        --hover: rgb(88, 184, 243);
+        --btn-hover: rgb(175, 217, 243);
+        --text-color: #888787;
+        --p-10: 10px;
+        --mb-20: 20px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      button {
+        outline: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      section {
+        max-width: 415px;
+        margin: 0 auto;
+        padding: 100px 0;
+      }
+
+      .news-header {
+        margin-bottom: var(--mb-20);
+      }
+
+      .news-nav {
+        margin-bottom: var(--mb-20);
+      }
+
+      .news-nav ul {
+        max-width: fit-content;
+        display: flex;
+        background: var(--white);
+        height: 32px;
+      }
+
+      .news-nav ul li {
+        height: 27.5px;
+        background: #efefef;
+        padding: 4px var(--p-10);
+        color: var(--text-color);
+        cursor: default;
+        border: 1px solid rgb(181, 181, 181);
+        border-bottom: none;
+      }
+
+      .news-nav ul li:hover {
+        color: var(--hover);
+      }
+
+      .news-nav ul li.active {
+        padding: 6px var(--p-10);
+        color: #e37676;
+        cursor: default;
+        background: var(--white);
+        height: 32px;
+        transform: translateY(-5px);
+      }
+
+      article {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dashed grey;
+        padding: var(--p-10);
+      }
+
+      article h2 a {
+        display: block;
+        font-size: 20px;
+        color: var(--blue);
+        margin-bottom: 6px;
+        text-decoration: none;
+      }
+
+      article div p {
+        font-size: 14px;
+        color: var(--text-color);
+      }
+
+      .news-cta {
+        color: var(--blue);
+        border-radius: 4px;
+      }
+
+      .news-actions {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--p-10) 0 0;
+        font-size: 14px;
+      }
+
+      .news-actions p,
+      .news-actions-more {
+        color: var(--blue);
+        cursor: pointer;
+      }
+
+      .news-actions-more span:first-child {
+        border-right: 1.2px solid black;
+        padding-right: 5px;
+      }
+
+      /* @media print and (max-width: 1000px) {
+        body {
+          background-color: #e37676;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <input type="text" value="" />
+    <div style="display: flex; justify-content: space-between; gap: 10px">
+      <div style="width: 40px; height: 40px; background-color: #e37676"></div>
+      <div
+        style="
+          position: sticky;
+          width: 40px;
+          height: 40px;
+          background-color: #e37676;
+        "
+      ></div>
+      <div style="width: 40px; height: 40px; background-color: #e37676"></div>
+      <div style="width: 40px; height: 40px; background-color: #e37676"></div>
+    </div>
+    <!-- <script src="./vanilla/test.js"></script> -->
+    <script>
+      // const $ELMS = {
+      //   navElms: Array.from(document.querySelectorAll("nav ul li")),
+      //   newsList: document.querySelector(".news-list"),
+      // };
+
+      // $ELMS.navElms.forEach((elm) => {
+      //   elm.addEventListener("click", (e) => {
+      //     navElms.forEach((elm) => elm.classList.remove("active"));
+
+      //     const elm = e.currentTarget;
+      //     elm.classList.add("active");
+      //   });
+      // });
+
+      // let newsItem = () => `<article>
+      //     <div>
+      //       <h2><a href="">Test</a></h2>
+      //       <p>Variety | August 14, 2008</p>
+      //     </div>
+      //     <button class="news-cta">Start discussion</button>
+      //   </article>`;
+
+      // $ELMS.newsList.innerHTML = newsItem();
+    </script>
+    <script src="./vanilla/customPromise.js"></script>
+  </body>
+</html>

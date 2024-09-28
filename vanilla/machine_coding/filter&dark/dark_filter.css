@@ -1,0 +1,47 @@
+body.dark {
+  background-color: rgb(47, 46, 46);
+}
+
+.dark p,
+.dark .filters-cont div {
+  color: #fff;
+}
+
+.dark input[type="checkbox"]:checked {
+  background-color: rgb(127, 171, 233);
+}
+
+.filters-cont input,
+.filters-cont label {
+  pointer-events: none;
+}
+
+.items-cont-outer {
+  max-height: 600px;
+  overflow: auto;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dark .pagination li,
+.dark .pagination div {
+  background: #fff;
+  border: 1px solid #a1a0a0;
+}
+
+.dark .pagination div.active,
+.dark .pagination li.active {
+  background-color: #8eca91;
+  color: black;
+  border: 1px solid #89ac8a;
+}
+
+.pagination li:hover:not(.active),
+.pagination div:hover:not(.active) {
+  background-color: #a6a5a5;
+}

@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before,
+button {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-cont,
+.file-cont {
+  margin-bottom: 10px;
+}
+
+.folder-children {
+  margin: 10px 0 0 10px;
+}
+
+.folder-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  background: darkgrey;
+  padding: 10px;
+}
+
+.folder-name-cont,
+.file-cont {
+  display: flex;
+  gap: 10px;
+}
+
+.folder-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.add-new-input {
+  margin-bottom: 10px;
+  border: 1px solid brown;
+  border-radius: 5px;
+  width: 40%;
+  padding: 5px 10px;
+}

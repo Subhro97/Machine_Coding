@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./post.css" />
+    <title>Post</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <div class="logo"></div>
+        <p class="userName">Subhrojit Mondal</p>
+      </header>
+      <div class="postContent">
+        <form>
+          <div class="textCont">
+            <div
+              class="textarea"
+              placeholder="Share your thoughts..."
+              contenteditable
+            ></div>
+            <div class="mediaCont"></div>
+            <div class="countCont">
+              <span class="current">0</span>
+              <span class="maxCount">/ 200</span>
+            </div>
+          </div>
+          <p class="errorTxt">Max limit exceeded</p>
+          <div class="actionCont">
+            <button type="submit">Create Post</button>
+            <div class="imageCont">
+              <img src="./add.png" />
+              <input accept="image/png, image/jpg, image/webp" type="file" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./post.js"></script>
+  </body>
+</html>
